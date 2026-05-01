@@ -52,9 +52,10 @@ export default function CarDetailScreen() {
   const fuel = extra?.fuel || car.fuel;
 
   async function openListing() {
-    const supported = await Linking.canOpenURL(car.sourceUrl);
+    const url = car!.sourceUrl;
+    const supported = await Linking.canOpenURL(url);
     if (supported) {
-      await Linking.openURL(car.sourceUrl);
+      await Linking.openURL(url);
     } else {
       Alert.alert('Cannot open link', 'Unable to open the listing URL.');
     }
