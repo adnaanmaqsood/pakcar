@@ -37,9 +37,11 @@
       "expo-router"
     ],
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "YOUR_EAS_PROJECT_ID"
+        "projectId": "ba7642f7-32bb-4ba7-b253-9c283102de5f"
       }
-    }
+    },
+    "owner": "adnaanmaqsood"
   }
 }
